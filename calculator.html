@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Risk Calculator</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+    <div class="logo">
+        <i class="fa-solid fa-shield-halved"></i>
+        Threat Analysis
+    </div>
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="threats.html">Threats</a></li>
+        <li><a href="scanner.html">Scanner</a></li>
+        <li><a href="calculator.html">Risk Calculator</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="about.html">About</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- Page Heading -->
+
+<section>
+
+    <h2>Cyber Security Risk Calculator</h2>
+
+    <p style="text-align:center; margin-bottom:30px;">
+
+        Enter the likelihood and impact values to calculate the overall risk level.
+
+    </p>
+
+</section>
+
+<!-- Risk Calculator -->
+
+<section>
+
+<div class="card">
+
+<label><strong>Likelihood (1 - 5)</strong></label>
+
+<input
+type="number"
+id="likelihood"
+min="1"
+max="5"
+placeholder="Enter Likelihood">
+
+<label><strong>Impact (1 - 5)</strong></label>
+
+<input
+type="number"
+id="impact"
+min="1"
+max="5"
+placeholder="Enter Impact">
+
+<button onclick="calculateRisk()">
+
+<i class="fa-solid fa-calculator"></i>
+
+Calculate Risk
+
+</button>
+
+<div id="riskResult" class="result">
+
+<h3>Risk Assessment</h3>
+
+<p>No calculation has been performed.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Risk Levels -->
+
+<section>
+
+<h2>Risk Level Guide</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3 class="low">Low</h3>
+
+<p>Risk Score: 1 - 5</p>
+
+<p>Minimal impact and low probability.</p>
+
+</div>
+
+<div class="card">
+
+<h3 class="medium">Medium</h3>
+
+<p>Risk Score: 6 - 10</p>
+
+<p>Requires monitoring and preventive measures.</p>
+
+</div>
+
+<div class="card">
+
+<h3 class="high">High</h3>
+
+<p>Risk Score: 11 - 15</p>
+
+<p>Immediate action is recommended.</p>
+
+</div>
+
+<div class="card">
+
+<h3 class="critical">Critical</h3>
+
+<p>Risk Score: 16 - 25</p>
+
+<p>Urgent mitigation is required.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+
+Threat Analysis and Vulnerability Assessment for Network Security
+
+</p>
+
+<p>
+
+Cyber Security Internship Project - 2026
+
+</p>
+
+</footer>
+
+<script src="js/calculator.js"></script>
+
+</body>
+
+</html>

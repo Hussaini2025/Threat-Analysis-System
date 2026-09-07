@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vulnerability Scanner</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<nav>
+
+    <div class="logo">
+        <i class="fa-solid fa-shield-halved"></i>
+        Threat Analysis
+    </div>
+
+    <ul>
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="threats.html">Threats</a></li>
+        <li><a href="scanner.html">Scanner</a></li>
+        <li><a href="calculator.html">Risk Calculator</a></li>
+        <li><a href="recommendations.html">Recommendations</a></li>
+        <li><a href="about.html">About</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- Page Heading -->
+
+<section>
+
+    <h2>Network Vulnerability Scanner</h2>
+
+    <p style="text-align:center; margin-bottom:30px;">
+
+        Enter an IP Address or Website URL to perform a simulated
+        vulnerability scan.
+
+    </p>
+
+</section>
+
+<!-- Scanner -->
+
+<section>
+
+<div class="card">
+
+<label><strong>Target IP Address or Website URL</strong></label>
+
+<input
+type="text"
+id="target"
+placeholder="Example: 192.168.1.1 or www.example.com">
+
+<button onclick="startScan()">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+Start Scan
+
+</button>
+
+<div id="result" class="result">
+
+<h3>Scan Results</h3>
+
+<p>No scan has been performed.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Information -->
+
+<section>
+
+<h2>Scanner Information</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-network-wired"></i>
+
+<h3>Port Scanning</h3>
+
+<p>
+
+Identifies commonly used ports and network services.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-bug"></i>
+
+<h3>Threat Detection</h3>
+
+<p>
+
+Simulates detection of common vulnerabilities.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-lock"></i>
+
+<h3>Security Check</h3>
+
+<p>
+
+Evaluates basic security settings and configurations.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-file-shield"></i>
+
+<h3>Recommendations</h3>
+
+<p>
+
+Displays security recommendations after scanning.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer>
+
+<p>
+
+Threat Analysis and Vulnerability Assessment for Network Security
+
+</p>
+
+<p>
+
+Cyber Security Internship Project - 2026
+
+</p>
+
+</footer>
+
+<script src="js/scanner.js"></script>
+
+</body>
+
+</html>
