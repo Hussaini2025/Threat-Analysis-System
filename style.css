@@ -1,0 +1,390 @@
+/* ===========================
+   GLOBAL STYLES
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#0d1117;
+    color:#ffffff;
+    line-height:1.6;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+nav{
+    background:#161b22;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#00d8ff;
+}
+
+.logo i{
+    margin-right:8px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#00d8ff;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    text-align:center;
+    padding:90px 10%;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:20px;
+    color:#00d8ff;
+}
+
+.hero p{
+    font-size:18px;
+    max-width:850px;
+    margin:auto;
+    color:#d8d8d8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:#00d8ff;
+    color:#000;
+    font-weight:bold;
+    border-radius:8px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#00aacc;
+    color:white;
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+
+section{
+    padding:70px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:35px;
+    color:#00d8ff;
+    font-size:32px;
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about p{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    color:#d0d0d0;
+    font-size:18px;
+}
+
+/* ===========================
+   FEATURE CARDS
+=========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#161b22;
+    padding:30px;
+    text-align:center;
+    border-radius:12px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 18px rgba(0,216,255,.4);
+}
+
+.card i{
+    font-size:45px;
+    color:#00d8ff;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cfcfcf;
+}
+
+/* ===========================
+   OBJECTIVES
+=========================== */
+
+.objectives ul{
+    max-width:700px;
+    margin:auto;
+}
+
+.objectives li{
+    margin-bottom:15px;
+    background:#161b22;
+    padding:15px;
+    border-left:5px solid #00d8ff;
+    border-radius:6px;
+}
+
+/* ===========================
+   TOOLS
+=========================== */
+
+.tool-list{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.tool-list span{
+    background:#00d8ff;
+    color:black;
+    padding:12px 22px;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#161b22;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+}
+
+footer p{
+    margin:8px 0;
+    color:#cccccc;
+}
+
+/* ===========================
+   TABLES
+=========================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#00d8ff;
+    color:black;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    border:1px solid #444;
+}
+
+table tr:nth-child(even){
+    background:#1d232b;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+input,
+select{
+    width:100%;
+    padding:14px;
+    margin-top:10px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+}
+
+button{
+    background:#00d8ff;
+    color:black;
+    border:none;
+    padding:15px 30px;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#009cc2;
+    color:white;
+}
+
+/* ===========================
+   RESULT BOX
+=========================== */
+
+.result{
+    margin-top:25px;
+    background:#161b22;
+    padding:20px;
+    border-left:6px solid #00d8ff;
+    border-radius:8px;
+}
+
+/* ===========================
+   DASHBOARD CARDS
+=========================== */
+
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.dashboard-card{
+    background:#161b22;
+    padding:30px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.dashboard-card h3{
+    color:#00d8ff;
+    margin-bottom:15px;
+}
+
+.dashboard-card p{
+    font-size:28px;
+    font-weight:bold;
+}
+
+/* ===========================
+   THREAT LEVELS
+=========================== */
+
+.low{
+    color:#00ff66;
+}
+
+.medium{
+    color:#ffc107;
+}
+
+.high{
+    color:#ff4444;
+}
+
+.critical{
+    color:#ff0000;
+    font-weight:bold;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:20px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+section{
+    padding:50px 6%;
+}
+
+}
+
+nav ul li a.active{
+
+background:#00d8ff;
+
+color:black;
+
+padding:8px 15px;
+
+border-radius:5px;
+
+}
+
+.card{
+
+transition:0.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 20px cyan;
+
+}
